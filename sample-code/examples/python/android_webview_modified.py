@@ -5,8 +5,7 @@ from time import sleep
 
 from appium import webdriver
 
-# PLATFORM_VERSION = '4.4'
-PLATFORM_VERSION = '4.2'
+PLATFORM_VERSION = '4.4'
 
 
 class AndroidWebViewTests(unittest.TestCase):
@@ -14,11 +13,12 @@ class AndroidWebViewTests(unittest.TestCase):
     def setUp(self):
         app = os.path.abspath(
                 os.path.join(os.path.dirname(__file__),
-                             '../../apps/selendroid-test-app.apk'))
+                             '../../apps/trivial-drive-app-debug.apk'))
         desired_caps = {
-            'app': app,
-            'appPackage': 'io.selendroid.testapp',
-            'appActivity': '.HomeScreenActivity',
+            # 'app': app,
+            'appPackage': 'com.thumzap.android.trivialdrivesample',
+            'appActivity': '.MainActivity',
+            # 'appActivity': '.ThumzapActivity',
             'platformName': 'Android',
             'platformVersion': PLATFORM_VERSION,
             'deviceName': 'Android Emulator'
@@ -31,11 +31,17 @@ class AndroidWebViewTests(unittest.TestCase):
                                        desired_caps)
 
     def test_webview(self):
+        """
         if (PLATFORM_VERSION == '4.4'):
             button = self.driver.find_element_by_accessibility_id('buttonStartWebviewCD')
         else:
             button = self.driver.find_element_by_name('buttonStartWebviewCD')
-        button.click()
+        """
+        buttons = self.driver.find_elements_by_class_name("android.widget.Button")
+        print("XXXXXX")
+        print(buttons)
+        print("XXXXXX")
+        buttons[1].click()
 
         self.driver.switch_to.context('WEBVIEW_0')
 
