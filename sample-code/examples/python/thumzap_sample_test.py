@@ -42,7 +42,7 @@ class AndroidWebViewTests(unittest.TestCase):
         self.driver.switch_to.context('WEBVIEW_0')
         sleep(2)
 
-        self.driver.get("http://google.com")
+        self.driver.get("http://10.0.0.15:8000/www/gift-center-popup.html")
         sleep(5)
 
         self.take_screenshot('portrait.png')
@@ -58,7 +58,7 @@ class AndroidWebViewTests(unittest.TestCase):
         self.driver.switch_to.context('WEBVIEW_0')
         sleep(2)
 
-        self.driver.get("http://google.com")
+        self.driver.get("http://10.0.0.15:8000/www/gift-center-popup.html")
         sleep(5)
 
         self.take_screenshot('landscape.png')
