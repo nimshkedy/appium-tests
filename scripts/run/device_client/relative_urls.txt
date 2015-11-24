@@ -15,16 +15,10 @@ index.html#/ask-to-buy/gas/bonus
 index.html#/invite/gas
 index.html#/reminder/123/main
 index.html#/reminder/123/how
-index.html#/reminder/123/sent?shkedy=1
+index.html#/reminder/123/sent
 index.html#/notification/ask-to-buy-paid
 index.html#/notification/grant
 index.html#/notification/thank-you-sent
 index.html#/notification/offer-about-to-expire
 index.html#/feedback/start
 index.html#/feedback/done
-
-# TODO: reminder for differnet offeree types + is attributed - true / false
-# TODO: ability to show different notifications - ask to buy grant, offree granted, offeror granted
-# TODO: ability to prevent progress of intro screen
-# TODO: ability to see selfie in share request screen
-# TODO: ability to see offeror name in share request screen
