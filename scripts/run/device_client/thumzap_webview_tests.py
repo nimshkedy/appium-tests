@@ -32,7 +32,7 @@ class AndroidWebViewTests(ParametrizedTestCase):
     def setUp(self):
         app = os.path.abspath(
                 os.path.join(os.path.dirname(__file__),
-                             'selendroid-test-app-debug.apk'))
+                             '../../apps/selendroid-test-app-debug.apk'))
 
         desired_caps = {
             'app': app,
