@@ -1,0 +1,1 @@
+py.test thumzap_webview_tests.py
